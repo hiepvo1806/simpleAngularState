@@ -1,0 +1,12 @@
+<h1>Page 2</h1>
+  <form [formGroup]="currentForm">
+    <div>
+      <label>Age</label>
+      <input type="text" [formControl]="this.currentForm.controls['age']"/>
+    </div>
+    <div>
+        <button type="button" (click)="previousHandler()">Previous</button>
+      <button type="button" (click)="saveHandler()">Save And Next</button>
+    </div>
+  </form>
+

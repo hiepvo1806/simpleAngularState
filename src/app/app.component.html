@@ -1,0 +1,11 @@
+<div [ngSwitch]="stateData.state">
+  <app-page-one *ngSwitchCase="1" [data]="stateData.data">
+  </app-page-one>
+
+  <app-page-two *ngSwitchCase="2" [data]="stateData.data" >
+  </app-page-two>
+
+  <app-page-three *ngSwitchCase="3" [data]="stateData.data">...</app-page-three>
+  <!-- <app-page-one *ngSwitchDefault>
+  </app-page-one> -->
+</div>

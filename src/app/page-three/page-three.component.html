@@ -1,0 +1,12 @@
+<h1>Page 3</h1>
+  <form [formGroup]="currentForm">
+    <div>
+      <label>Monthly pay</label>
+      <input type="text" [formControl]="this.currentForm.controls['pay']"/>
+    </div>
+    <div>
+        <button type="button" (click)="previousHandler()">Previous(step2)</button>
+        <button type="button" (click)="saveHandler()">Save And Move to step 1 </button>
+    </div>
+  </form>
+

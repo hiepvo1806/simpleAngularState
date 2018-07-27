@@ -1,0 +1,15 @@
+
+  <form [formGroup]="currentForm">
+    <div>
+      <label>Name</label>
+      <input type="text" [formControl]="this.currentForm.controls['name']"/>
+    </div>
+    <div>
+      <label>Year</label>
+      <input type="text" [formControl]="this.currentForm.controls['year']"/>
+    </div>
+    <div>
+      <button type="button" (click)="saveHandler()">Save</button>
+    </div>
+  </form>
+
