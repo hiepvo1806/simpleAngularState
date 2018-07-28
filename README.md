@@ -1,6 +1,6 @@
 # Simple Angular example for storing state in back/forward of pages
 Specifications:
-- using reactive form
+- using Angular Cli 6 and reactive forms
 - page states is stored in a main obj property
 
 Future release:
