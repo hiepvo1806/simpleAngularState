@@ -21,6 +21,6 @@ export class StateObj {
   data: any;
   constructor() {
     this.state = 1;
-    this.data = {};
+    this.data = null;
   }
 }
