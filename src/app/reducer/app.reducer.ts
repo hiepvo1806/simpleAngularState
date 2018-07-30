@@ -1,15 +1,9 @@
-import  {AppState} from '../state/app.state'; 
-const initialState: AppState = { counter: 0 };
+import { Reducer, combineReducers } from 'redux';
+import { CounterReducer } from '../reducer/counter.reducer';
+import { PageOneReducer } from '../reducer/page-one.reducer';
+import {AppState} from '../state/app.state';
 
-export const AppReducer =
-    (state = initialState, action) => {
-        switch (action.type) {
-            case 'INCREASE' : 
-            return {
-                counter : state.counter + 1
-            }
-            //return Object.assign({}, state, { counter: state.counter + 1 });
-            default:
-                return state
-        }
-    }
+export const AppReducer = combineReducers<AppState>({
+    counter: CounterReducer,
+    pageOne: PageOneReducer
+})

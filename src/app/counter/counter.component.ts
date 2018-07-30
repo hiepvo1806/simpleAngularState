@@ -16,7 +16,7 @@ export class CounterComponent implements OnInit {
 
   readState() {
     let currentState = this.store.getState() as AppState;
-    this.counter = currentState.counter;
+    this.counter = currentState.counter.counter;
   }
 
 

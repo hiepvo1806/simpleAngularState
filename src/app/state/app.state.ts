@@ -1,3 +1,7 @@
+import { CounterState } from './counter.state';
+import { PageOneState } from './page-one.state';
+
 export class AppState {
-    counter:number;
+    counter: CounterState;
+    pageOne: PageOneState;
 }
